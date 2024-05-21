@@ -47,52 +47,58 @@
 								</header>
 
 								<!-- Text stuff -->
-									<h2>Positional Audio System in a Custom Game Engine</h2>
-									<p>Designed and implemented positional audio system in Prime Engine.
+									<h2>Positional Audio System in Prime Engine</h2>
+									<p> Designed and implemented a 3D Audio System for the proprietary Game Engine - Prime Engine which handled and played the audio effects.
 										<br>Prime Engine is a custom game engine which I worked on during the Fall 2021 semester for Game Engine Development class.
 									</p>
 									<hr />
 									<h4>Features</h4>
 									<p>
 										<ol>
-										<li>There are 2 audio listeners in the scene - 
-											<ul><li> The Camera - primary listener</li>
-											<li> The soldier shooting at the target(imrod)</li>
-											</ul>
-										</li>
+											<li style="font-weight: bold">There are 2 audio listeners in the scene - 
+												<ul>
+													<li style="font-weight: normal"> The Camera - primary listener</li>
+													<li style="font-weight: normal"> The soldier shooting at the target(imrod)</li>
+												</ul>
+											</li>
 										
-										<li>Three Audio sources –
-											<ul>
-												<li>Car</li>
-												<li>Shooting Soldier</li>
-												<li>Walking Soldier</li>
-											</ul>
-										</li>
+											<li>Three Audio sources –
+												<ul>
+													<li style="font-weight: normal">Car</li>
+													<li style="font-weight: normal">Shooting Soldier</li>
+													<li style="font-weight: normal">Walking Soldier</li>
+												</ul>
+											</li>
 										
-										<li>
-										Shooting Soldier - 
-										<br>Based on the orientation of the camera, distance of camera from the soldier and the orientation of soldier while shooting at the target, volume of Left and Right channels is set
-										</li>
-										<br>
-										<li> Walking Soldier - 
-											<ul>
-											<li>Based on the animation playing, walking, or running sound is played</li>
-											<li>According to distance from camera and orientation of camera L and R channels are set</li>
-											</ul>
-										</li>
+											<li style="font-weight: bold">
+											Shooting Soldier - 
+											<br>
+												<ul>
+													<li style="font-weight: normal">Based on the orientation of the camera, distance of camera from the soldier and the orientation of soldier while shooting at the target, volume of Left and Right channels is set</li>
+												</ul>
+											</li>
+
+											<br>
+
+											<li style="font-weight: bold"> Walking Soldier - 
+												<ul>
+													<li style="font-weight: normal">Based on the animation playing, walking, or running sound is played</li>
+													<li style="font-weight: normal">According to distance from camera and orientation of camera L and R channels are set</li>
+												</ul>
+											</li>
 										
-										<li> Car - 
-											<ul>
-											<li>The Car has an engine sound attached to it</li>
-											<li>A ray is cast from car to the camera to check for collisions with the buildings. (Collision detection is done only with the leftmost and rightmost buildings for purpose of demo)</li>
-											<li>When collision is detected, volume for that channel is muted</li>
-											<li>Camera orientation and distance from the camera adjusts the sound</li>
-											</ul>
-										</li>
+											<li style="font-weight: bold"> Car - 
+												<ul>
+													<li style="font-weight: normal">The Car has an engine sound attached to it</li>
+													<li style="font-weight: normal">A ray is cast from car to the camera to check for collisions with the buildings. (Collision detection is done only with the leftmost and rightmost buildings for purpose of demo)</li>
+													<li style="font-weight: normal">When collision is detected, volume for that channel is muted</li>
+													<li style="font-weight: normal">Camera orientation and distance from the camera adjusts the sound</li>
+												</ul>
+											</li>
 										
-										<li>
-											The distance of camera from the audio source is the common attenuation factor for all the sound sources.
-										</li>
+											<li style="font-weight: bold">
+												The distance of camera from the audio source is the common attenuation factor for all the sound sources.
+											</li>
 
 										</ol>
 									</p>
